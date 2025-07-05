@@ -37,7 +37,7 @@ public class CalculadoraTest {
     @Test
     public void testDividirPorZero() {
         // Usando assertThrows para verificar a exceção
-        assertThrows(ArithmeticException.class, () -> {
+        assertThrows(ArithmeticException.class,() -> {
             calculadora.dividir(5, 0); // Espera uma exceção de divisão por zero
         });
     }
